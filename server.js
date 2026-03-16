@@ -9,6 +9,7 @@ app.use(express.json());
 
 app.use('/', require('./routes/index'));
 app.use('/contacts', require('./routes/contacts'));
+app.use('/api-docs', require('./routes/swagger'));
 
 mongodb.initDb((err) => {
   if (err) {
