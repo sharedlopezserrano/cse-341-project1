@@ -10,10 +10,6 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: "http://localhost:3000",
-        description: "Local server"
-      },
-      {
         url: "https://project1-2qxs.onrender.com",
         description: "Production server"
       }

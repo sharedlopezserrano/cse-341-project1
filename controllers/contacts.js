@@ -34,7 +34,7 @@ const createContact = async (req, res) => {
   if (response.acknowledged) {
     res.status(201).send();
   } else {
-    res.status(500).json(response.error);
+    res.status(500).json(response.error || "Some error occurred while creating the contact.");
   }
 };
 
